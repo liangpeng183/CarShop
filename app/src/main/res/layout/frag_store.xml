@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+
+              android:layout_height="match_parent">
+
+    <TextView
+            android:text="严选好车"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textSize="32dp"
+            android:textColor="@color/red"
+            android:background="@color/white"
+            android:id="@+id/textView"
+            />
+    <View android:layout_width="match_parent"
+          android:background="@color/red"
+          android:layout_height="1px"></View>
+    <LinearLayout
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="40dp">
+
+        <LinearLayout
+                android:gravity="center"
+                android:background="@drawable/store_search"
+                android:layout_width="match_parent"
+                android:id="@+id/search"
+                android:layout_height="25dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:src="@mipmap/search"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="搜索想看想买的车"
+                    android:textSize="13sp"
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@mipmap/car0"
+    />\
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                    android:padding="8dp"
+    >
+        <ImageView
+                android:layout_width="188dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/car5"
+                android:background="@color/green"
+                android:id="@+id/show_iv1"
+        />
+        <TextView
+                android:layout_width="188dp"
+                android:layout_height="18dp"
+                android:id="@+id/show_tv1"
+                android:gravity="center"
+                android:layout_below="@+id/show_iv1"
+                android:text="1"
+        />
+        <View android:layout_width="6dp" android:layout_height="138dp"
+              android:background="@color/yellow"
+        android:layout_toRightOf="@id/show_iv1"
+              android:id="@+id/view"
+        />
+
+        <ImageView
+                android:layout_width="188dp"
+                android:layout_height="120dp"
+                android:id="@+id/show_iv2"
+                android:src="@mipmap/car3"
+                android:background="@color/bg"
+                android:layout_toRightOf="@id/view"/>
+        <TextView
+                android:layout_width="188dp"
+                android:layout_height="18dp"
+                android:id="@+id/show_tv2"
+                android:gravity="center"
+                android:layout_below="@id/show_iv2"
+                android:layout_toRightOf="@id/show_tv1"
+                android:text="2"
+        />
+
+        <ImageView
+                android:layout_width="188dp"
+                android:layout_height="120dp"
+                android:id="@+id/show_iv3"
+                android:src="@mipmap/car1"
+                android:background="@color/bg"
+                android:layout_below="@id/show_tv2"
+                />
+        <TextView
+                android:layout_width="188dp"
+                android:layout_height="18dp"
+                android:id="@+id/show_tv3"
+                android:gravity="center"
+                android:layout_below="@id/show_iv3"
+                android:text="3"
+        />
+
+        <View android:layout_width="6dp" android:layout_height="138dp"
+              android:background="@color/black"
+              android:layout_below="@id/view"
+              android:layout_toRightOf="@id/show_iv3"
+              android:id="@+id/view1"
+        />
+
+        <ImageView
+                android:layout_width="188dp"
+                android:layout_height="120dp"
+                android:background="@color/green"
+                android:layout_toRightOf="@id/view1"
+                android:layout_below="@id/show_tv2"
+                android:src="@mipmap/car0"
+                android:id="@+id/show_iv4"
+        />
+        <TextView
+                android:layout_width="188dp"
+                android:layout_height="18dp"
+                android:id="@+id/show_tv4"
+                android:gravity="center"
+                android:layout_toRightOf="@id/view1"
+                android:layout_below="@+id/show_iv4"
+                android:text="4"
+        />
+
+        <ImageView
+                android:layout_width="188dp"
+                android:layout_height="120dp"
+                android:background="@color/green"
+                android:layout_below="@id/show_tv3"
+                android:src="@mipmap/car2"
+               android:id="@+id/show_iv5"
+        />
+        <TextView
+                android:layout_width="188dp"
+                android:layout_height="18dp"
+                android:id="@+id/show_tv5"
+                android:gravity="center"
+                android:layout_below="@+id/show_iv5"
+                android:text="5"
+        />
+        <View android:layout_width="6dp" android:layout_height="138dp"
+              android:background="@color/red"
+              android:layout_below="@id/view1"
+              android:layout_toRightOf="@id/show_iv5"
+              android:id="@+id/view2"
+        />
+        <ImageView
+                android:layout_width="188dp"
+                android:layout_height="120dp"
+                android:background="@color/gray"
+                android:src="@mipmap/car4"
+                android:layout_toRightOf="@id/view2"
+                android:layout_below="@id/show_tv4"
+                android:id="@+id/show_iv6"
+        />
+        <TextView
+                android:layout_width="188dp"
+                android:layout_height="18dp"
+                android:id="@+id/show_tv6"
+                android:gravity="center"
+                android:layout_toRightOf="@id/view2"
+                android:layout_below="@+id/show_iv6"
+                android:text="6"
+        />
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

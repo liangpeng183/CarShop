@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+    <View android:layout_width="match_parent" android:layout_height="1px"
+         android:background="@color/gray">
+    </View>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:id="@+id/shouye"
+                android:gravity="center"
+                android:orientation="vertical">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:id="@+id/iv1"
+                    android:src="@mipmap/main"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv1"
+                    android:text="@string/main"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/red"
+                    android:textSize="15dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:id="@+id/shangcheng"
+                android:gravity="center"
+                android:orientation="vertical">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:id="@+id/iv2"
+                    android:src="@mipmap/store">
+
+            </ImageView>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv2"
+                    android:text="@string/store"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/wode"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:id="@+id/iv3"
+                    android:src="@mipmap/me"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv3"
+                    android:text="@string/me"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
